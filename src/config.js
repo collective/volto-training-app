@@ -19,12 +19,19 @@ import {
   tiles as defaultTiles,
 } from '@plone/volto/config';
 
+import { AlbumView, FullView } from './components';
+
 export const settings = {
   ...defaultSettings,
 };
 
 export const views = {
   ...defaultViews,
+  layoutViews: {
+    ...defaultViews.layoutViews,
+    album_view: AlbumView,
+    full_view: FullView,
+  },
 };
 
 export const widgets = {

@@ -8,3 +8,8 @@
  *   Footer,
  * };
  */
+
+import AlbumView from './AlbumView/AlbumView';
+import FullView from './FullView/FullView';
+
+export { AlbumView, FullView };

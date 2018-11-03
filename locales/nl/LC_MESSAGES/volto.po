@@ -30,4 +30,10 @@ msgstr ""
 "Language-Name: Nederlands\n"
 "Preferred-Encodings: utf-8\n"
 
+#: customizations/components/theme/Tags/Tags
+msgid "Search for tag {tag}"
+msgstr "Zoek naar tag {tag}"
 
+#: customizations/components/theme/Tags/Tags
+msgid "Tags"
+msgstr "Tags NL"

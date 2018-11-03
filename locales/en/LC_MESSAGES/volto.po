@@ -11,4 +11,10 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#: customizations/components/theme/Tags/Tags
+msgid "Search for tag {tag}"
+msgstr ""
 
+#: customizations/components/theme/Tags/Tags
+msgid "Tags"
+msgstr ""

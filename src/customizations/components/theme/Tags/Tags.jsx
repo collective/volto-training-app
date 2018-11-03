@@ -7,6 +7,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Container } from 'semantic-ui-react';
+import {
+  defineMessages,
+  injectIntl,
+  intlShape,
+  FormattedMessage,
+} from 'react-intl';
+
+const messages = defineMessages({
+  searchTag: {
+    id: 'Search for tag {tag}',
+    defaultMessage: 'Search for tag {tag}',
+  },
+});
 
 /**
  * Tags component class.
@@ -14,12 +27,17 @@ import { Container } from 'semantic-ui-react';
  * @param {array} tags Array of tags.
  * @returns {string} Markup of the component.
  */
-const Tags = ({ tags }) =>
+const Tags = ({ tags, intl }) =>
   tags && tags.length > 0 ? (
     <Container>
-      Tags:
+      <FormattedMessage id="Tags" defaultMessage="Tags" />:
       {tags.map(tag => (
-        <Link className="ui label" to={`/search?Subject=${tag}`} key={tag}>
+        <Link
+          className="ui label"
+          to={`/search?Subject=${tag}`}
+          key={tag}
+          title={intl.formatMessage(messages.searchTag, { tag })}
+        >
           {tag}
         </Link>
       ))}
@@ -35,6 +53,7 @@ const Tags = ({ tags }) =>
  */
 Tags.propTypes = {
   tags: PropTypes.arrayOf(PropTypes.string),
+  intl: intlShape.isRequired,
 };
 
 /**
@@ -46,4 +65,4 @@ Tags.defaultProps = {
   tags: null,
 };
 
-export default Tags;
+export default injectIntl(Tags);

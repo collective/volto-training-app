@@ -11,5 +11,6 @@
 
 import AlbumView from './AlbumView/AlbumView';
 import FullView from './FullView/FullView';
+import RatingWidget from './RatingWidget/RatingWidget';
 
-export { AlbumView, FullView };
+export { AlbumView, FullView, RatingWidget };

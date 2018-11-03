@@ -19,7 +19,7 @@ import {
   tiles as defaultTiles,
 } from '@plone/volto/config';
 
-import { AlbumView, FullView } from './components';
+import { AlbumView, FullView, RatingWidget } from './components';
 
 export const settings = {
   ...defaultSettings,
@@ -36,6 +36,10 @@ export const views = {
 
 export const widgets = {
   ...defaultWidgets,
+  id: {
+    ...defaultWidgets.id,
+    rating: RatingWidget,
+  },
 };
 
 export const tiles = {

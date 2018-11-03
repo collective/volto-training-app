@@ -25,7 +25,7 @@ import {
   tiles as defaultTiles,
 } from '@plone/volto/config';
 
-import { AlbumView, FullView, RatingWidget } from './components';
+import { AlbumView, FaqView, FullView, RatingWidget } from './components';
 
 const UnderlineButton = createInlineStyleButton({
   style: 'UNDERLINE',
@@ -52,6 +52,7 @@ export const views = {
     ...defaultViews.layoutViews,
     album_view: AlbumView,
     full_view: FullView,
+    faq_view: FaqView,
   },
 };
 

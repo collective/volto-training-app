@@ -5,7 +5,7 @@ A training on how to create your own website using Volto is available as part of
 ## Quick Start
 
 Below is a list of commands you will probably find useful.
-
+### `yarn`
 ### `yarn start`
 
 Runs the project in development mode.  
